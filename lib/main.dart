@@ -6,8 +6,6 @@ import 'models/comment.dart';
 import 'models/post.dart';
 import 'models/user.dart';
 
-// NOTE: FOR AN UPDATED AND COMPLETE FLUTTER EXAMPLE FOLLOW
-// https://github.com/flutterdata/flutter_data_todos
 
 void main() async {
   late final Directory _dir;
