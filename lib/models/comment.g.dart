@@ -1,10 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 part of 'comment.dart';
 
-// **************************************************************************
-// JsonSerializableGenerator
-// **************************************************************************
 
 Comment _$CommentFromJson(Map<String, dynamic> json) {
   return Comment(
@@ -36,11 +31,6 @@ Map<String, dynamic> _$SheepToJson(Sheep instance) => <String, dynamic>{
       'name': instance.name,
     };
 
-// **************************************************************************
-// RepositoryGenerator
-// **************************************************************************
-
-// ignore_for_file: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member, non_constant_identifier_names
 
 mixin $CommentLocalAdapter on LocalAdapter<Comment> {
   @override
@@ -68,14 +58,12 @@ mixin $CommentLocalAdapter on LocalAdapter<Comment> {
   Map<String, dynamic> serialize(model) => _$CommentToJson(model);
 }
 
-// ignore: must_be_immutable
 class $CommentHiveLocalAdapter = HiveLocalAdapter<Comment>
     with $CommentLocalAdapter;
 
 class $CommentRemoteAdapter = RemoteAdapter<Comment>
     with JSONServerAdapter<Comment>;
 
-//
 
 final commentsLocalAdapterProvider =
     Provider<LocalAdapter<Comment>>((ref) => $CommentHiveLocalAdapter(ref));
@@ -154,7 +142,6 @@ extension CommentX on Comment {
   }
 }
 
-// ignore_for_file: invalid_use_of_protected_member, invalid_use_of_visible_for_testing_member, non_constant_identifier_names
 
 mixin $SheepLocalAdapter on LocalAdapter<Sheep> {
   @override
@@ -174,12 +161,9 @@ mixin $SheepLocalAdapter on LocalAdapter<Sheep> {
   Map<String, dynamic> serialize(model) => _$SheepToJson(model);
 }
 
-// ignore: must_be_immutable
 class $SheepHiveLocalAdapter = HiveLocalAdapter<Sheep> with $SheepLocalAdapter;
 
 class $SheepRemoteAdapter = RemoteAdapter<Sheep> with JSONServerAdapter<Sheep>;
-
-//
 
 final sheepLocalAdapterProvider =
     Provider<LocalAdapter<Sheep>>((ref) => $SheepHiveLocalAdapter(ref));
